@@ -8,41 +8,41 @@ $(document).ready(() => {
 	const $container = $('#container')
         console.log($container)
 
-    const $h1 = $('<h1>').text('Hogwarts')
-        $container.append($h1)
+    const $school = $('<h1>').text('Hogwarts')
+        $container.append($school)
 
-    const $h2 = $('<h2>').text('Taz Campbell')
-        $container.append($h2)
+    const $me = $('<h2>').text('Taz Campbell')
+        $container.append($me)
             
-    const $h3 = $('<h3>').text('Hufflepuff')
-        $container.append($h3)
+    const $house = $('<h3>').text('Hufflepuff')
+        $container.append($house)
             
-    const $h4 = $('<h4>').text('Charlie')
-        $h4.addClass('cat')
-            $container.append($h4)
+    const $pet = $('<h4>').text('Charlie')
+        $pet.addClass('cat')
+            $container.append($pet)
         
-    const $h5 = $('<h5>').text('Holly Wand with Unicorn Hair')
-        $container.append($h5)
+    const $wand = $('<h5>').text('Yew Wand with Dragon Heartstring')
+        $container.append($wand)
 
-    const $ul = $('<ul storage="trunk">')
-        $container.append($ul)
+    const $trunk = $('<ul storage="trunk">')
+        $container.append($trunk)
 
-    const $li1 = $('<li>').text('Butter Beer')
+    const $item1 = $('<li>').text('Butter Beer')
 
-    const $li2 = $('<li>').text('Invisibility Cloak')
-        $li2.addClass('SECRET')
+    const $item2 = $('<li>').text('Invisibility Cloak')
+        $item2.addClass('SECRET')
 
-    const $li3 = $('<li>').text('Marauders Map')
-        $li3.addClass('SECRET')
+    const $item3 = $('<li>').text('Marauders Map')
+        $item3.addClass('SECRET')
 
-    const $li4 = $('<li>').text('Time Turner')
-        $li4.addClass('SECRET')
+    const $item4 = $('<li>').text('Time Turner')
+        $item4.addClass('SECRET')
 
-    const $li5 = $('<li>').text('Cat Backpack') //instead of a leash, b/c there's no way my cat is going to want to be on a leash lol
-        $li5.addClass('cat')
+    const $item5 = $('<li>').text('Cat Backpack') //instead of a leash, b/c there's no way my cat is going to want to be on a leash lol
+        $item5.addClass('cat')
 
-    const $li6 = $('<li>').text('Bertie Botts Every Flavor Beans')
-        $ul.append($li1, $li2, $li3, $li4, $li5, $li6)
+    const $item6 = $('<li>').text('Bertie Botts Every Flavor Beans')
+        $trunk.append($item1, $item2, $item3, $item4, $item5, $item6)
 
     const $table = $('<table id="classes"></table>')
         $container.append($table)
@@ -76,6 +76,7 @@ $(document).ready(() => {
         $tr5.append('<td>History of Magic, Charms, Transfiguration</td>')
         $table.append($tr1, $tr2, $tr3, $tr4, $tr5)
 
+$('#wand').replaceWith('Holly Wand and Unicorn Hair')
 
 
 }
