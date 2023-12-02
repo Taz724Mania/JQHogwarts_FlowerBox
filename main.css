@@ -1,0 +1,16 @@
+body {
+    background-color: #e9ac2d;
+    text-align: center;
+}
+
+.cat {
+    font-family: fantasy;
+}
+
+.SECRET {
+    opacity: .5;
+}
+
+ul[storage="trunk"] {
+    list-style-type: none;
+  }
