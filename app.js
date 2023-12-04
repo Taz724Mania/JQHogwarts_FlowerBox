@@ -105,7 +105,12 @@ $(document).ready(() => {
 
     $item5.removeClass('cabbage')
 
-    
+    $tableHead.text('Fall 2018!')
+
+    const $item7 = $('<li>').text('Butter Beer')
+        $item7.insertBefore($item2)
+
+    $(trunk).attr('storage', 'chest')
 
 }
 )
