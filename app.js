@@ -95,7 +95,17 @@ $(document).ready(() => {
 
     $house.after($petElement)
     
+    // $('.SECRET').hide('slow')
+    
+    $('.SECRET').delay(2000).hide()
+    
+    $('.SECRET').show('slow')
 
+    $item5.addClass('cabbage')
+
+    $item5.removeClass('cabbage')
+
+    
 
 }
 )
