@@ -24,7 +24,7 @@ $(document).ready(() => {
     const $wand = $('<h5>').text('Yew Wand with Dragon Heartstring')
         $container.append($wand)
 
-    const $trunk = $('<ul storage="trunk">')
+    const $trunk = $('<ul storage = "trunk">')
         $container.append($trunk)
 
     const $item1 = $('<li>').text('Butter Beer')
@@ -42,7 +42,8 @@ $(document).ready(() => {
         $item5.addClass('cat')
 
     const $item6 = $('<li>').text('Bertie Botts Every Flavor Beans')
-        $trunk.append($item1, $item2, $item3, $item4, $item5, $item6)
+        
+    $trunk.append($item1, $item2, $item3, $item4, $item5, $item6)
 
     const $table = $('<table id="classes"></table>')
         $container.append($table)
@@ -74,10 +75,28 @@ $(document).ready(() => {
     const $Friday = $('<tr>')
         $Friday.append('<td>Friday</td>')
         $Friday.append('<td>History of Magic, Charms, Transfiguration</td>')
-        $table.append($tr1, $tr2, $tr3, $tr4, $tr5)
+        $table.append($Monday, $Tuesday, $Wednesday, $Thursday, $Friday)
 
-$('#wand').replaceWith('Holly Wand and Unicorn Hair')
+    $wand.remove()
+    $item1.remove()
+
+    const $Wand = $('<h5>').text('Holly Wand with Unicorn Hair')
+        $pet.after($Wand)  
+        $Wand.css('color', 'orange')
+
+    const $petElement = $pet.detach()
+
+    const $petList = $('<ul>')
+        $petList.append($('<li>').addClass('cat').text('Charlie'))
+    
+    $('#newSpotForCharlie').append($petElement)
+
+    $petElement.detach()
+
+    $house.after($petElement)
+    
 
 
 }
 )
+
